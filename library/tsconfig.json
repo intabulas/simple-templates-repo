@@ -1,17 +1,15 @@
 {
   "compilerOptions": {
-    "target": "ES2021",
+    "target": "ES2022",
     "module": "ESNext",
-    "moduleResolution": "node",
-    "lib": ["ES2021"],
-    "outDir": "./dist",
-    "rootDir": "./src",
+    "moduleResolution": "Bundler",
     "strict": true,
+    "skipLibCheck": true,
     "declaration": true,
     "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "outDir": "dist",
+    "rootDir": "src"
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "**/*.test.ts", "**/*.data.ts", "dist"]
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
 }
